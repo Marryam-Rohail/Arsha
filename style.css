@@ -3,7 +3,8 @@
   --container-fluid-color: #f5f6f8;
 }
 
-.main-color {
+.main-color,
+.text-color {
   color: #37517e;
 }
 
@@ -42,6 +43,51 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-process-card {
+  overflow: hidden;
+}
+
+.work-process-card img {
+  transition: all 0.3s;
+}
+.work-process-card:hover img {
+  scale: 1.1;
+}
+
+.card-content {
+  transition: all 0.3s;
+}
+
+.work-process-card:hover .card-content {
+  transform: translateY(-10px);
+}
+
+.call-to-action {
+  background: linear-gradient(
+      to right,
+      rgba(55, 81, 126, 0.3),
+      rgba(55, 81, 126, 0.8)
+    ),
+    url("	https://bootstrapmade.com/content/demo/Arsha/assets/img/bg/bg-8.webp")
+      fixed;
+}
+
+.portfolio-buttons button {
+  transition: 0.3s;
+}
+
+.portfolio-buttons button:hover {
+  background-color: aqua;
+  cursor: pointer;
+  color: white;
 }
 
 @keyframes upDown {
